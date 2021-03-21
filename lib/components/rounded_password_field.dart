@@ -5,7 +5,7 @@ import '../constants.dart';
 
 class RoundedPasswordField extends StatelessWidget {
   final Color color;
-  final Icon icon;
+  final IconData icon;
   final String hintText;
   final ValueChanged onChange;
 
@@ -27,7 +27,7 @@ class RoundedPasswordField extends StatelessWidget {
           hintText: "Password",
           border: InputBorder.none,
           icon: Icon(
-            Icons.lock,
+            icon,
             color: kPrimaryColor,
           ),
           suffixIcon: Icon(
